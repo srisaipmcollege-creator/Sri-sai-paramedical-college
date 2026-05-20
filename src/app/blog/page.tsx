@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { ArrowUpRight, Clock, Search } from 'lucide-react';
 import { PageHero } from '@/components/ui/PageHero';
+import { InfraImage } from '@/components/ui/InfraImage';
 import { posts } from '@/lib/data';
 import { cn } from '@/lib/utils';
 
@@ -80,7 +81,14 @@ export default function Page() {
                   <div className="relative aspect-[16/10] overflow-hidden">
                     <div className="absolute inset-0 bg-gradient-to-br from-brand-500/40 via-teal-500/30 to-gold-400/20" />
                     <div className="absolute inset-0 grid-bg opacity-40" />
-                    <span className="absolute top-4 left-4 px-3 py-1 rounded-full bg-white/95 text-[10px] uppercase tracking-widest font-semibold text-brand-600">
+                    <InfraImage
+                      src={p.image}
+                      alt={p.title}
+                      sizes="(max-width:640px) 100vw, (max-width:1024px) 50vw, 33vw"
+                      className="transition-transform duration-700 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-ink/50 via-transparent to-transparent" />
+                    <span className="absolute top-4 left-4 px-3 py-1 rounded-full bg-white/95 backdrop-blur text-[10px] uppercase tracking-widest font-semibold text-brand-600 shadow-soft">
                       {p.category}
                     </span>
                   </div>

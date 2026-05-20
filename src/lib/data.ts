@@ -735,6 +735,7 @@ export const posts = [
       'What to look for in a paramedical college near Hyderabad — affiliation, practical training, placement support and infrastructure.',
     readTime: '6 min',
     date: '2026-03-12',
+    image: 'https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=1200&q=80&auto=format&fit=crop',
   },
   {
     slug: 'dmlt-career-opportunities-telangana',
@@ -744,6 +745,7 @@ export const posts = [
       'From government hospitals to self-employment — a practical look at where a DMLT diploma can take you in Telangana.',
     readTime: '7 min',
     date: '2026-02-28',
+    image: 'https://images.unsplash.com/photo-1582719188393-bb71ca45dbb9?w=1200&q=80&auto=format&fit=crop',
   },
   {
     slug: 'paramedical-government-jobs',
@@ -753,6 +755,7 @@ export const posts = [
       'A complete list of government paramedical roles — technician posts, multipurpose health workers and more.',
     readTime: '5 min',
     date: '2026-02-04',
+    image: 'https://images.unsplash.com/photo-1631815587646-b85a1bb027e1?w=1200&q=80&auto=format&fit=crop',
   },
   {
     slug: 'self-employment-paramedical',
@@ -762,6 +765,7 @@ export const posts = [
       'Start your own diagnostic centre, optical shop or specialty service after graduating from a paramedical program.',
     readTime: '5 min',
     date: '2026-01-22',
+    image: 'https://images.unsplash.com/photo-1606761568499-6d2451b23c66?w=1200&q=80&auto=format&fit=crop',
   },
 ];
 

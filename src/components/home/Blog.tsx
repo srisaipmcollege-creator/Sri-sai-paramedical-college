@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { ArrowUpRight, Clock } from 'lucide-react';
 import { SectionHeader } from '@/components/ui/SectionHeader';
 import { Button } from '@/components/ui/Button';
+import { InfraImage } from '@/components/ui/InfraImage';
 import { posts } from '@/lib/data';
 
 export function Blog() {
@@ -49,8 +50,14 @@ function FeaturedPost({ post }: { post: (typeof posts)[number] }) {
         <div className="relative aspect-[16/10] overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-brand-500/40 via-teal-500/30 to-gold-400/20" />
           <div className="absolute inset-0 grid-bg opacity-40" />
-          <div className="absolute inset-0 bg-gradient-to-t from-ink/70 via-transparent to-transparent" />
-          <span className="absolute top-5 left-5 px-3 py-1 rounded-full bg-white/95 text-[10px] uppercase tracking-widest font-semibold text-brand-600">
+          <InfraImage
+            src={post.image}
+            alt={post.title}
+            sizes="(max-width:1024px) 100vw, 60vw"
+            className="transition-transform duration-700 group-hover:scale-105"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/10 to-transparent" />
+          <span className="absolute top-5 left-5 px-3 py-1 rounded-full bg-white/95 backdrop-blur text-[10px] uppercase tracking-widest font-semibold text-brand-600 shadow-soft">
             Featured · {post.category}
           </span>
         </div>
@@ -88,6 +95,12 @@ function CompactPost({ post, index }: { post: (typeof posts)[number]; index: num
         <div className="relative h-24 w-28 rounded-2xl overflow-hidden shrink-0">
           <div className="absolute inset-0 bg-gradient-to-br from-brand-500/40 via-teal-500/30 to-transparent" />
           <div className="absolute inset-0 grid-bg opacity-40" />
+          <InfraImage
+            src={post.image}
+            alt={post.title}
+            sizes="112px"
+            className="transition-transform duration-700 group-hover:scale-110"
+          />
         </div>
         <div className="flex-1">
           <div className="text-[10px] uppercase tracking-widest font-semibold text-brand-600 dark:text-brand-400">

@@ -15,6 +15,7 @@ import {
 } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { Counter } from '@/components/ui/Counter';
+import { AnimatedHeroPhoto } from '@/components/ui/AnimatedHeroPhoto';
 
 export function Hero() {
   const mx = useMotionValue(0);
@@ -151,13 +152,21 @@ export function Hero() {
           >
             {/* Phone-like display */}
             <div className="absolute inset-0 rounded-[2.5rem] glass-strong shadow-soft overflow-hidden border border-white/40 dark:border-white/10">
-              <div className="absolute inset-0 bg-gradient-to-br from-brand-500/30 via-teal-500/20 to-transparent" />
-              <div className="absolute inset-0 grid-bg opacity-40" />
+              {/* Animated photo carousel */}
+              <AnimatedHeroPhoto />
+              {/* Brand tint over the photo */}
+              <div className="absolute inset-0 bg-gradient-to-br from-brand-600/30 via-transparent to-teal-500/30 mix-blend-overlay" />
+              {/* Bottom gradient for stat-card legibility */}
+              <div className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-ink/85 via-ink/30 to-transparent" />
+              {/* Top gradient for the header chip legibility */}
+              <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-ink/50 to-transparent" />
 
               <div className="absolute inset-0 p-6 flex flex-col">
-                <div className="flex items-center justify-between text-[10px] uppercase tracking-widest text-white/90">
-                  <span>Admissions Open</span>
-                  <span className="flex items-center gap-1">
+                <div className="flex items-center justify-between text-[10px] uppercase tracking-widest text-white">
+                  <span className="inline-flex items-center gap-1.5 rounded-full bg-white/15 backdrop-blur px-2.5 py-1">
+                    Admissions Open
+                  </span>
+                  <span className="inline-flex items-center gap-1.5 rounded-full bg-white/15 backdrop-blur px-2.5 py-1">
                     <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse" />
                     Live
                   </span>
