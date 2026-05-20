@@ -49,7 +49,7 @@ export function PageHero({ eyebrow, title, highlight, subtitle, crumbs }: Props)
           </Reveal>
         )}
         <Reveal delay={0.05}>
-          <h1 className="mt-5 font-heading font-bold tracking-tight text-4xl sm:text-5xl lg:text-6xl text-ink dark:text-white max-w-4xl leading-[1.05]">
+          <h1 className="mt-5 font-heading font-bold tracking-tight text-3xl xs:text-4xl sm:text-5xl lg:text-6xl text-ink dark:text-white max-w-4xl leading-[1.1] sm:leading-[1.05] break-words">
             {title}{' '}
             {highlight && <span className="text-gradient animate-gradient-pan">{highlight}</span>}
           </h1>

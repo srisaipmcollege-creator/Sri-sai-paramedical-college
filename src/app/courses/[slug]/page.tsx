@@ -63,7 +63,7 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
                 </span>
               </Reveal>
               <Reveal delay={0.05}>
-                <h1 className="mt-5 font-heading font-bold tracking-tight text-4xl sm:text-5xl lg:text-6xl text-ink dark:text-white leading-[1.05]">
+                <h1 className="mt-5 font-heading font-bold tracking-tight text-3xl xs:text-4xl sm:text-5xl lg:text-6xl text-ink dark:text-white leading-[1.1] sm:leading-[1.05] break-words">
                   {course.title}
                 </h1>
               </Reveal>

@@ -75,7 +75,7 @@ export function VocationalHero() {
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.05 }}
-            className="mt-6 font-heading font-bold tracking-tight text-5xl sm:text-6xl lg:text-7xl text-ink dark:text-white leading-[1.02]"
+            className="mt-6 font-heading font-bold tracking-tight text-4xl xs:text-5xl sm:text-6xl lg:text-7xl text-ink dark:text-white leading-[1.05] sm:leading-[1.02] break-words"
           >
             Build Your{' '}
             <span className="relative inline-block">
@@ -204,7 +204,7 @@ export function VocationalHero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.6 }}
-              className="absolute -left-12 top-12 hidden sm:flex items-center gap-3 rounded-2xl glass-strong shadow-soft px-4 py-3 animate-float"
+              className="absolute -left-6 lg:-left-12 top-12 hidden lg:flex items-center gap-3 rounded-2xl glass-strong shadow-soft px-4 py-3 animate-float"
             >
               <div className="h-9 w-9 rounded-xl bg-gradient-brand text-white grid place-items-center">
                 <School className="h-4 w-4" />
@@ -219,7 +219,7 @@ export function VocationalHero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.55, duration: 0.6 }}
-              className="absolute -right-8 bottom-20 hidden sm:flex items-center gap-3 rounded-2xl glass-strong shadow-soft px-4 py-3 animate-float [animation-delay:-2.5s]"
+              className="absolute -right-4 lg:-right-8 bottom-20 hidden lg:flex items-center gap-3 rounded-2xl glass-strong shadow-soft px-4 py-3 animate-float [animation-delay:-2.5s]"
             >
               <div className="h-9 w-9 rounded-xl bg-gradient-to-br from-gold-400 to-brand-500 text-white grid place-items-center">
                 <HeartPulse className="h-4 w-4" />

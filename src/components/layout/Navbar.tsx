@@ -30,8 +30,8 @@ export function Navbar() {
   return (
     <header
       className={cn(
-        'fixed inset-x-0 top-0 z-50 transition-all duration-500',
-        scrolled ? 'pt-2' : 'pt-4',
+        'fixed inset-x-0 top-0 z-50 transition-all duration-500 pt-[env(safe-area-inset-top)]',
+        scrolled ? 'mt-2' : 'mt-4',
       )}
     >
       <div className="container-page">
@@ -108,7 +108,7 @@ export function Navbar() {
             transition={{ duration: 0.25 }}
             className="lg:hidden container-page mt-3"
           >
-            <div className="glass-strong rounded-3xl p-3 shadow-soft">
+            <div className="glass-strong rounded-3xl p-3 shadow-soft max-h-[calc(100vh-8rem)] overflow-y-auto overscroll-contain">
               <ul className="grid gap-1">
                 {nav.map(item => {
                   const active = pathname === item.href;

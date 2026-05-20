@@ -21,7 +21,7 @@ export function FloatingButtons() {
 
   return (
     <>
-      <div className="fixed bottom-5 right-5 z-50 flex flex-col items-end gap-3">
+      <div className="fixed bottom-4 right-4 sm:bottom-5 sm:right-5 z-50 flex flex-col items-end gap-3 pb-[env(safe-area-inset-bottom)] pr-[env(safe-area-inset-right)] max-w-[calc(100vw-2rem)]">
         <AnimatePresence>
           {open && (
             <>
