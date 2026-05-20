@@ -93,7 +93,12 @@ export const metadata: Metadata = {
     description: site.description,
   },
   icons: {
-    icon: '/favicon.svg',
+    icon: [
+      { url: '/logo.png', type: 'image/png' },
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+    ],
+    apple: '/logo.png',
+    shortcut: '/logo.png',
   },
   alternates: { canonical: site.url },
   robots: { index: true, follow: true },

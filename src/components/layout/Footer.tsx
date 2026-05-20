@@ -47,7 +47,7 @@ export function Footer() {
       <div className="container-page relative pt-20 pb-10">
         <div className="grid lg:grid-cols-12 gap-12">
           <div className="lg:col-span-5">
-            <Logo />
+            <Logo size="lg" />
             <p className="mt-5 max-w-md text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
               Sri Sai Paramedical College, Shadnagar — career-focused paramedical education with practical training, hospital exposure and 100% job guidance in government and private healthcare sectors. Affiliated to the Telangana Paramedical Board.
             </p>

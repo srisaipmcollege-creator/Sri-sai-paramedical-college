@@ -1,21 +1,61 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
+import { cn } from '@/lib/utils';
 
-export function Logo({ compact = false }: { compact?: boolean }) {
+type Props = {
+  /** Hide the wordmark text and only render the emblem. */
+  compact?: boolean;
+  /** Size in tailwind units (height of the emblem). */
+  size?: 'sm' | 'md' | 'lg';
+  className?: string;
+  /** Force-light: useful on dark hero overlays. */
+  invert?: boolean;
+};
+
+const SIZES = {
+  sm: { box: 'h-9 w-9', text: 'text-[10px]', name: 'text-sm' },
+  md: { box: 'h-12 w-12', text: 'text-[10px]', name: 'text-base' },
+  lg: { box: 'h-16 w-16', text: 'text-xs', name: 'text-lg' },
+} as const;
+
+export function Logo({ compact = false, size = 'md', className, invert = false }: Props) {
+  const s = SIZES[size];
+
   return (
-    <Link href="/" className="group inline-flex items-center gap-3">
-      <span className="relative grid place-items-center h-10 w-10 rounded-2xl bg-gradient-brand text-white shadow-soft overflow-hidden">
-        <span className="absolute inset-0 bg-gradient-sheen -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
-        <svg viewBox="0 0 24 24" className="h-5 w-5 relative" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M12 21s-7-4.35-7-10a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 5.65-7 10-7 10z" opacity="0.3" />
-          <path d="M3 12h4l2-3 3 6 2-3h7" />
-        </svg>
+    <Link
+      href="/"
+      aria-label="Sri Sai Paramedical College — Home"
+      className={cn('group inline-flex items-center gap-3', className)}
+    >
+      <span
+        className={cn(
+          'relative inline-block shrink-0 transition-transform duration-300 group-hover:scale-105',
+          s.box,
+        )}
+      >
+        <Image
+          src="/logo.png"
+          alt="Sri Sai Paramedical College logo"
+          fill
+          sizes="64px"
+          priority
+          className={cn('object-contain', invert && 'invert brightness-150')}
+        />
       </span>
+
       {!compact && (
-        <span className="flex flex-col leading-none">
-          <span className="font-heading font-bold text-base tracking-tight">Sri Sai</span>
-          <span className="text-[10px] font-medium uppercase tracking-[0.2em] text-brand-600 dark:text-brand-400">
+        <span className="hidden xs:flex flex-col leading-none">
+          <span className={cn('font-heading font-bold tracking-tight', s.name)}>
+            Sri Sai
+          </span>
+          <span
+            className={cn(
+              'font-medium uppercase tracking-[0.2em] text-brand-600 dark:text-brand-400',
+              s.text,
+            )}
+          >
             Paramedical
           </span>
         </span>
