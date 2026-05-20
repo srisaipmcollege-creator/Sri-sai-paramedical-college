@@ -625,18 +625,78 @@ export const faculty = [
 ];
 
 export const infrastructure = [
-  { title: 'Smart Classrooms', tag: 'Learning', desc: 'Interactive teaching, recorded lectures and case-based learning.' },
-  { title: 'Medical Lab Technology Lab', tag: 'DMLT', desc: 'Hematology, biochemistry and pathology equipment for DMLT students.' },
-  { title: 'Anesthesia & OT Simulation', tag: 'DANS / DMST', desc: 'Mock OT setup with anesthesia and sterilisation training.' },
-  { title: 'Radiology / Imaging Lab', tag: 'DMIT', desc: 'X-Ray positioning, radiation safety and digital radiography practice.' },
-  { title: 'ECG & Cardiac Lab', tag: 'DECG / DCLT', desc: 'ECG machines, Holter and treadmill testing for cardiac students.' },
-  { title: 'Ophthalmology Practice Room', tag: 'DOM', desc: 'Refraction, visual acuity and ophthalmic diagnostic practice.' },
-  { title: 'Public Health Demo Unit', tag: 'DMPHA (M)', desc: 'Community health, first aid and field training setup.' },
-  { title: 'Library & Resource Centre', tag: 'Learning', desc: 'Paramedical books, journals and reference material.' },
-  { title: 'Seminar Hall', tag: 'Events', desc: 'For workshops, guest lectures and recruiter drives.' },
-  { title: 'Hospital Tie-ups', tag: 'Internship', desc: 'Rotations with partner hospitals and diagnostic centres.' },
-  { title: 'Computer Lab', tag: 'Tech', desc: 'Hospital information systems and digital records training.' },
-  { title: 'Student Common Room', tag: 'Campus Life', desc: 'Comfortable spaces for breaks, group study and discussions.' },
+  {
+    title: 'Smart Classrooms',
+    tag: 'Learning',
+    desc: 'Interactive teaching, recorded lectures and case-based learning.',
+    image: 'https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=900&q=80&auto=format&fit=crop',
+  },
+  {
+    title: 'Medical Lab Technology Lab',
+    tag: 'DMLT',
+    desc: 'Hematology, biochemistry and pathology equipment for DMLT students.',
+    image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=900&q=80&auto=format&fit=crop',
+  },
+  {
+    title: 'Anesthesia & OT Simulation',
+    tag: 'DANS / DMST',
+    desc: 'Mock OT setup with anesthesia and sterilisation training.',
+    image: 'https://images.unsplash.com/photo-1551076805-e1869033e561?w=900&q=80&auto=format&fit=crop',
+  },
+  {
+    title: 'Radiology / Imaging Lab',
+    tag: 'DMIT',
+    desc: 'X-Ray positioning, radiation safety and digital radiography practice.',
+    image: 'https://images.unsplash.com/photo-1530497610245-94d3c16cda28?w=900&q=80&auto=format&fit=crop',
+  },
+  {
+    title: 'ECG & Cardiac Lab',
+    tag: 'DECG / DCLT',
+    desc: 'ECG machines, Holter and treadmill testing for cardiac students.',
+    image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=900&q=80&auto=format&fit=crop',
+  },
+  {
+    title: 'Ophthalmology Practice Room',
+    tag: 'DOM',
+    desc: 'Refraction, visual acuity and ophthalmic diagnostic practice.',
+    image: 'https://images.unsplash.com/photo-1577401239170-897942555fb3?w=900&q=80&auto=format&fit=crop',
+  },
+  {
+    title: 'Public Health Demo Unit',
+    tag: 'DMPHA (M)',
+    desc: 'Community health, first aid and field training setup.',
+    image: 'https://images.unsplash.com/photo-1584516150909-c43483ee7932?w=900&q=80&auto=format&fit=crop',
+  },
+  {
+    title: 'Library & Resource Centre',
+    tag: 'Learning',
+    desc: 'Paramedical books, journals and reference material.',
+    image: 'https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=900&q=80&auto=format&fit=crop',
+  },
+  {
+    title: 'Seminar Hall',
+    tag: 'Events',
+    desc: 'For workshops, guest lectures and recruiter drives.',
+    image: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=900&q=80&auto=format&fit=crop',
+  },
+  {
+    title: 'Hospital Tie-ups',
+    tag: 'Internship',
+    desc: 'Rotations with partner hospitals and diagnostic centres.',
+    image: 'https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=900&q=80&auto=format&fit=crop',
+  },
+  {
+    title: 'Computer Lab',
+    tag: 'Tech',
+    desc: 'Hospital information systems and digital records training.',
+    image: 'https://images.unsplash.com/photo-1531497865144-0464ef8fb9a9?w=900&q=80&auto=format&fit=crop',
+  },
+  {
+    title: 'Student Common Room',
+    tag: 'Campus Life',
+    desc: 'Comfortable spaces for breaks, group study and discussions.',
+    image: 'https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=900&q=80&auto=format&fit=crop',
+  },
 ];
 
 export const events = [

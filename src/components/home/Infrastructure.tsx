@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import { SectionHeader } from '@/components/ui/SectionHeader';
 import { Button } from '@/components/ui/Button';
+import { InfraImage } from '@/components/ui/InfraImage';
 import { infrastructure } from '@/lib/data';
 
 export function Infrastructure() {
@@ -35,9 +36,18 @@ export function Infrastructure() {
                 className="group w-72 shrink-0 rounded-3xl overflow-hidden glass hover:-translate-y-1 hover:shadow-soft transition-all duration-500"
               >
                 <div className="relative h-40 overflow-hidden">
+                  {/* Gradient fallback (visible if image fails) */}
                   <div className="absolute inset-0 bg-gradient-to-br from-brand-500/30 via-teal-500/20 to-transparent" />
                   <div className="absolute inset-0 grid-bg opacity-40" />
-                  <div className="absolute top-4 left-4 px-3 py-1 rounded-full bg-white/85 text-[10px] uppercase tracking-widest font-semibold text-brand-600">
+                  <InfraImage
+                    src={item.image}
+                    alt={item.title}
+                    sizes="288px"
+                    className="transition-transform duration-700 group-hover:scale-105"
+                  />
+                  {/* Readability overlay on top of image */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-ink/40 via-transparent to-transparent" />
+                  <div className="absolute top-4 left-4 px-3 py-1 rounded-full bg-white/90 backdrop-blur text-[10px] uppercase tracking-widest font-semibold text-brand-600 shadow-soft">
                     {item.tag}
                   </div>
                 </div>
