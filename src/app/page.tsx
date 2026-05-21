@@ -11,7 +11,6 @@ import { VocationalBanner } from '@/components/home/VocationalBanner';
 import { Testimonials } from '@/components/home/Testimonials';
 import { Partners } from '@/components/home/Partners';
 import { Admission } from '@/components/home/Admission';
-import { Gallery } from '@/components/home/Gallery';
 import { Events } from '@/components/home/Events';
 import { Blog } from '@/components/home/Blog';
 import { FAQSection } from '@/components/home/FAQSection';
@@ -34,7 +33,6 @@ export default function HomePage() {
       <Testimonials />
       <Partners />
       <Admission />
-      <Gallery />
       <Events />
       <Blog />
       <FAQSection />
