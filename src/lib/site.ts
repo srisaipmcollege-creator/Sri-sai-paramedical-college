@@ -32,7 +32,6 @@ export const nav = [
   { label: 'Placements', href: '/placements' },
   { label: 'Faculty', href: '/faculty' },
   { label: 'Infrastructure', href: '/infrastructure' },
-  { label: 'Gallery', href: '/gallery' },
   { label: 'Events', href: '/events' },
   { label: 'Blog', href: '/blog' },
   { label: 'Contact', href: '/contact' },

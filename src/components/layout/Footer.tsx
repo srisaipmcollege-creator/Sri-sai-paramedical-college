@@ -16,7 +16,6 @@ const links = {
   ],
   Campus: [
     { label: 'Infrastructure', href: '/infrastructure' },
-    { label: 'Gallery', href: '/gallery' },
     { label: 'Events & News', href: '/events' },
     { label: 'Blog', href: '/blog' },
     { label: 'Contact', href: '/contact' },

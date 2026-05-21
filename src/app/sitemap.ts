@@ -13,7 +13,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'placements',
     'faculty',
     'infrastructure',
-    'gallery',
     'events',
     'blog',
     'contact',
